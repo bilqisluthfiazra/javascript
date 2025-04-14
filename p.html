@@ -32,13 +32,16 @@
 <body>
     <script>
         let angka=prompt("masukan bilangan: ");
-        // % 2 === 0 buat ganjil genap
+        function cekganjilgenap(angka) {
         if (angka % 2 === 0){
-            alert(angka + " adalah bilangan genap");
+           return "genap";
         } else {
-            alert(angka + " adalah bilangan ganjil");
+           return "ganjil";
         }
-            
+        }
+
+        alert(cekganjilgenap(number(angka)));
+        
     </script>
 </body>
 </html>
